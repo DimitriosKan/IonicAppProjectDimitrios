@@ -1,0 +1,23 @@
+{
+  "name": "ionicappprojectdimitrios",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimitriosKan/IonicAppProjectDimitrios.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DimitriosKan/IonicAppProjectDimitrios/issues"
+  },
+  "homepage": "https://github.com/DimitriosKan/IonicAppProjectDimitrios#readme",
+  "description": ""
+}
