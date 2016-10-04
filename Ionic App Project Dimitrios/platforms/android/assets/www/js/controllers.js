@@ -1,11 +1,15 @@
 angular.module('someklone.controllers', [])
 
-.controller('HomeCtrl', function ($scope, Posts, $ionicPopup) {
-    Posts.following().then(function(data)
-        {
-            $scope.posts = data;
-        }
-    );
+.controller('HomeCtrl', function ($scope, Posts, $ionicPopup, $http) {
+    $http.get('https://mobile-internet-program.herokuapp.com/phase2').then(function (response) {
+        Posts.replacepost(response.data);
+        $scope.posts = response.data;
+    })
+    //Posts.following().then(function (data)
+    //    {
+    //        $scope.posts = data;
+    //    }
+    //);
 
     $scope.like = function (postId) {
         Posts.like(postId).then(function () {});

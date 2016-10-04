@@ -104,6 +104,11 @@ angular.module('someklone.services').factory('Posts', function($q) {
                         tags: []
                     });
             });
+        },
+
+        replacepost: function(newpost)
+        {
+            posts = newpost;
         }
     };
 });
