@@ -4,7 +4,7 @@ var app = express();
 
 app.set('port', (process.env.PORT || 80));
 
-var posts = [
+var post = [
         {
             id: 0,
             user: {
@@ -70,3 +70,6 @@ var posts = [
 app.get('/phase2', function(req, res) {
     res.send (post)
 });
+app.listen(app.get('port'),function() {
+    console.log('working');
+})
